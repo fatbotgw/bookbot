@@ -28,7 +28,7 @@ def sort_on(dict_item):
 
 
 def dict_sort(dictionary):
-    sorted_list = []        # this is a list of dictionaries
+    sorted_list = []  # this is a list of dictionaries
 
     # This works, but isn't very Python-like
     # for entry in dictionary:
@@ -40,7 +40,6 @@ def dict_sort(dictionary):
         if key.isalpha() is True:
             sorted_list.append({key: value})
 
-
     sorted_list.sort(reverse=True, key=sort_on)
 
-    return sorted_list#.sort(key=sort_on(), reverse=True)
+    return sorted_list
